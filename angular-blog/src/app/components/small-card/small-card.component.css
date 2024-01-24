@@ -1,6 +1,11 @@
 .container__small-card {
   width: 700px;
   margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.container__small-card:hover {
+  transform: scale(1.02);
 }
 
 .container__small-card-content {
@@ -11,7 +16,10 @@
 .small-card__photo > img {
   width: 200px;
   min-width: 200px;
+  height: 170px;
   margin-right: 20px;
+  object-fit: cover;
+  border-radius: 2px;
 }
 
 .small-card__title {

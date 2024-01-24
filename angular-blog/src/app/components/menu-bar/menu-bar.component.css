@@ -1,9 +1,29 @@
 .container__menu-bar > ul {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .container__menu-bar > ul > li {
-  margin-right: 10px;
+  margin-right: 40px;
   list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.menu-bar__photo {
+  padding: 5px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+a {
+  opacity: 0.7;
+}
+
+a:hover {
+  opacity: 1;
 }

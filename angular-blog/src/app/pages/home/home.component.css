@@ -5,3 +5,7 @@
   flex-direction: row;
   justify-content: center;
 }
+
+.articles__main {
+  margin-right: 50px;
+}
