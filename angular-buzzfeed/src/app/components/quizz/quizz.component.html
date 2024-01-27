@@ -1,0 +1,19 @@
+<div class="quizz__container">
+  <div class="quizz_logo">
+    <img src="../../../assets/imgs/logo.png" alt="" />
+    <h3>{{ title }}</h3>
+  </div>
+  <app-quizz-question
+    [finished]="finished"
+    [question]="questionSelected.question"
+  ></app-quizz-question>
+  <app-quizz-options
+    [finished]="finished"
+    [options]="questionSelected.options"
+    (answerEvent)="playerChoose($event)"
+  ></app-quizz-options>
+  <app-quizz-results
+    [finished]="finished"
+    [answer]="answerSelected"
+  ></app-quizz-results>
+</div>
